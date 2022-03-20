@@ -1,14 +1,9 @@
 import React from "react";
-import { useColorMode, Button, Flex, Box, Heading } from "@chakra-ui/react";
-import { ColorModeProvider } from "@chakra-ui/react";
+import { useColorMode, Flex, Container } from "@chakra-ui/react";
 
-import NextLink from "next/link";
-import styled from "@emotion/styled";
-import ThemeToggle from "../components/ThemeToggle";
-import Navigation from "../components/Navigation";
 import GlobalStyle from "../components/GlobalStyle";
 
-const Container = ({ children }) => {
+const Layout = ({ children }) => {
   const { colorMode } = useColorMode();
 
   const bgColor = {
@@ -22,7 +17,7 @@ const Container = ({ children }) => {
   };
 
   return (
-    <>
+    <Container maxW="4xl">
       <GlobalStyle>
         <Flex
           as="main"
@@ -36,8 +31,8 @@ const Container = ({ children }) => {
           {children}
         </Flex>
       </GlobalStyle>
-    </>
+    </Container>
   );
 };
 
-export default Container;
+export default Layout;

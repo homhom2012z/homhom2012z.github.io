@@ -1,27 +1,34 @@
+import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import NextLink from "next/link";
-import {
-  Container,
-  Heading,
-  VStack,
-  Text,
-  Center,
-  Button,
-} from "@chakra-ui/react";
 
-const NotFound = () => {
+export default function NotFound() {
   return (
-    <Container>
-      <Center>
-        <VStack>
-          <Heading size="3xl">404 !!</Heading>
-          <Text mb={8}>Page not found</Text>
-          <NextLink href="/">
-            <Button bg="green.300">Return to home</Button>
-          </NextLink>
-        </VStack>
-      </Center>
-    </Container>
+    <Box textAlign="center" py={10} px={6}>
+      <Heading
+        display="inline-block"
+        as="h2"
+        size="2xl"
+        bgGradient="linear(to-r, teal.400, teal.600)"
+        backgroundClip="text"
+      >
+        404
+      </Heading>
+      <Text fontSize="18px" mt={3} mb={2}>
+        Page Not Found
+      </Text>
+      <Text color={"gray.500"} mb={6}>
+        The page you're looking for does not seem to exist
+      </Text>
+      <NextLink href="/">
+        <Button
+          colorScheme="teal"
+          bgGradient="linear(to-r, teal.400, teal.500, teal.600)"
+          color="white"
+          variant="solid"
+        >
+          Go to Home
+        </Button>
+      </NextLink>
+    </Box>
   );
-};
-
-export default NotFound;
+}
