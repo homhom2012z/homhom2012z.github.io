@@ -12,9 +12,13 @@ import {
   createIcon,
   IconProps,
   useColorModeValue,
+  useColorMode,
 } from "@chakra-ui/react";
+import LogoImage from "./LogoImage";
 
 export default function CallToActionWithVideo() {
+  const { colorMode } = useColorMode();
+
   return (
     <Container maxW={"7xl"}>
       <Stack
@@ -28,7 +32,7 @@ export default function CallToActionWithVideo() {
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+            fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
           >
             <Text
               as={"span"}
@@ -52,9 +56,11 @@ export default function CallToActionWithVideo() {
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+            I'm studying in computer science major, and I have an interest in
+            all things about computers, especially Back-end in Software
+            Development and Software Engineering. Always learning and practicing
+            to develop and improve myself. Feel free to reach out via email or
+            any social media with any inquiries.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -85,13 +91,14 @@ export default function CallToActionWithVideo() {
         >
           <Box
             position={"relative"}
-            height={"300px"}
-            rounded={"2xl"}
-            boxShadow={"2xl"}
+            // height={"300px"}
+            // rounded={"2xl"}
+            // boxShadow={"2xl"}
             width={"full"}
             overflow={"hidden"}
           >
-            <Image
+            <LogoImage colorMode={colorMode} />
+            {/* <Image
               alt={"Hero Image"}
               fit={"cover"}
               align={"center"}
@@ -100,7 +107,7 @@ export default function CallToActionWithVideo() {
               src={
                 "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
               }
-            />
+            /> */}
           </Box>
         </Flex>
       </Stack>
