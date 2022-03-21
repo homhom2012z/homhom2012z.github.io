@@ -56,8 +56,8 @@ export default function CallToActionWithVideo() {
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            I'm studying in computer science major, and I have an interest in
-            all things about computers, especially Back-end in Software
+            I&apos;m studying in computer science major, and I have an interest
+            in all things about computers, especially Back-end in Software
             Development and Software Engineering. Always learning and practicing
             to develop and improve myself. Feel free to reach out via email or
             any social media with any inquiries.
