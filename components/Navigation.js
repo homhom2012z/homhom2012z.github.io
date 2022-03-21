@@ -1,15 +1,30 @@
 import React from "react";
-import { useColorMode, Button, Flex, Box, Heading } from "@chakra-ui/react";
+import {
+  useColorMode,
+  Button,
+  Flex,
+  Box,
+  Heading,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
+  Stack,
+  HStack,
+} from "@chakra-ui/react";
+
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 import NextLink from "next/link";
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
+
 import ThemeToggle from "../components/ThemeToggle";
-import { useRouter } from "next/router";
 import LinkNav from "./LinkNav";
 
-export default function Navigation() {
+export default function Navigation(props) {
   const { colorMode } = useColorMode();
-  const router = useRouter();
 
   const StickNav = styled(Flex)`
     position: sticky;
@@ -27,8 +42,8 @@ export default function Navigation() {
     dark: "black",
   };
   const color = {
-    light: "black",
-    dark: "white",
+    light: "#000000",
+    dark: "#FFFFFF",
   };
 
   return (
@@ -46,19 +61,62 @@ export default function Navigation() {
       mt={8}
       mb={[0, 0, 8]}
       mx="auto"
+      {...props}
     >
-      <Box color={color[colorMode]}>
-        <NextLink href="/" passHref>
-          <Heading size="sm" as="a" p={[1, 2, 4]}>
-            PORTFOLIO
-          </Heading>
-        </NextLink>
-        <LinkNav href="/about">About</LinkNav>
-        <LinkNav href="/projects">Projects</LinkNav>
-        <LinkNav href="/cv">CV</LinkNav>
-        <LinkNav href="/blog">Blog</LinkNav>
+      <HStack color={color[colorMode]}>
+        <motion.a
+          whileHover={{
+            scale: 1.05,
+            color: [`${color[colorMode]}`, "hsl(266, 59, 55)"],
+          }}
+          whileTap={{
+            scale: 0.8,
+          }}
+        >
+          <NextLink href="/" passHref>
+            <Heading size="sm" as="a" p={[1, 2, 4]}>
+              PORTFOLIO
+            </Heading>
+          </NextLink>
+        </motion.a>
+
+        <Box
+          display={{ base: "none", md: "flex" }}
+          direction={{ base: "row", md: "none" }}
+        >
+          <LinkNav href="/about">About</LinkNav>
+          <LinkNav href="/projects">Projects</LinkNav>
+          <LinkNav href="/blog">Blog</LinkNav>
+          <LinkNav href="/cv">CV</LinkNav>
+        </Box>
+      </HStack>
+      <Box flex={1} align="right">
+        <ThemeToggle />
+        <Box ml={2} pl={2} display={{ base: "inline-block", md: "none" }}>
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+            />
+            <MenuList>
+              <NextLink href="/" passHref>
+                <MenuItem>About</MenuItem>
+              </NextLink>
+              <NextLink href="/projects" passHref>
+                <MenuItem>Projects</MenuItem>
+              </NextLink>
+              <NextLink href="/blog" passHref>
+                <MenuItem>Blog</MenuItem>
+              </NextLink>
+              <NextLink href="/cv" passHref>
+                <MenuItem>CV</MenuItem>
+              </NextLink>
+            </MenuList>
+          </Menu>
+        </Box>
       </Box>
-      <ThemeToggle />
     </StickNav>
   );
 }

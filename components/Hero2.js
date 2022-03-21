@@ -47,7 +47,7 @@ export default function CallToActionWithVideo() {
               Write once,
             </Text>
             <br />
-            <Text as={"span"} color={"red.400"}>
+            <Text as={"span"} color={"purple.400"}>
               use everywhere!
             </Text>
           </Heading>
@@ -66,8 +66,8 @@ export default function CallToActionWithVideo() {
               fontWeight={"normal"}
               px={6}
               colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
+              bg={"purple.400"}
+              _hover={{ bg: "purple.500" }}
             >
               Get started
             </Button>
