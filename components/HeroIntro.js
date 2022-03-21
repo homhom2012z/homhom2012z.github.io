@@ -33,7 +33,7 @@ export default function Intro() {
     >
       <Stack spacing={{ base: 4, md: 6 }}>
         <Heading as="h1" size="lg" md={2}>
-          Hi, I'm Siriwat Bunmee
+          Hi, I&apos;m Siriwat Bunmee
         </Heading>
         <Flex
         // flexDirection="column"
@@ -41,8 +41,8 @@ export default function Intro() {
         // alignItems="flex-start"
         >
           <Text color={colorSecondary[colorMode]}>
-            I'm studying in computer science major, and I have an interest in
-            all things about computers, especially Back-end in Software
+            I&apos;m studying in computer science major, and I have an interest
+            in all things about computers, especially Back-end in Software
             Development and Software Engineering. Always learning and practicing
             to develop and improve myself. Feel free to reach out via email or
             any social media with any inquiries.
