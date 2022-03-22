@@ -11,6 +11,7 @@ import {
   Flex,
   Link,
   Button,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
@@ -69,12 +70,16 @@ export default function ProjectCardRender({ data, length, isPreview }) {
       {isPreview && (
         <Flex justify={"center"} width="100%">
           <NextLink href="/projects" passHref>
-            <Link _hover="none" mt={8}>
+            <Link _hover={""} mt={8}>
               <Button
                 rightIcon={<ArrowForwardIcon />}
                 colorScheme="gray"
                 variant="outline"
                 aria-label="view all projects"
+                fontSize={"sm"}
+                _hover={{
+                  background: `${useColorModeValue("gray.100", "gray.700")}`,
+                }}
               >
                 View All Projects
               </Button>

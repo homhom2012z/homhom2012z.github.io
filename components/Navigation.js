@@ -87,7 +87,7 @@ export default function Navigation(props) {
           {/* <LinkNav href="/about">About</LinkNav> */}
           <LinkNav href="/projects">Projects</LinkNav>
           <LinkNav href="/blog">Blog</LinkNav>
-          <LinkNav href="/cv">CV</LinkNav>
+          <LinkNav href="/files/pdf/CV.pdf">CV</LinkNav>
         </Box>
       </HStack>
       <Box flex={1} align="right">
@@ -110,7 +110,7 @@ export default function Navigation(props) {
               <NextLink href="/blog" passHref>
                 <MenuItem>Blog</MenuItem>
               </NextLink>
-              <NextLink href="/cv" passHref>
+              <NextLink href="/files/pdf/CV.pdf" passHref>
                 <MenuItem>CV</MenuItem>
               </NextLink>
             </MenuList>

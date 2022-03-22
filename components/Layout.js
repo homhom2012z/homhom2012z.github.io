@@ -21,10 +21,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Siriwat Bunmee</title>
-      </Head>
+      </Head> */}
+
       <Container
         display="flex"
         maxW="container.md"

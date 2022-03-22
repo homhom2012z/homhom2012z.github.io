@@ -1,3 +1,4 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import { useColorMode, IconButton } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 
@@ -13,6 +14,9 @@ const ThemeToggle = () => {
       icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
       onClick={toggleColorMode}
       color={iconColor[colorMode]}
+      _hover={{
+        background: `${useColorModeValue("gray.300", "gray.700")}`,
+      }}
     />
   );
 };
