@@ -28,8 +28,7 @@ export default function ProjectCardRender({ data, length, isPreview }) {
 
   return (
     <>
-      <Divider mb={12} mt={2} w="90%" alignSelf="center" />
-
+      {isPreview && <Divider mb={12} mt={2} w="90%" alignSelf="center" />}
       <Heading as={"h1"} size={"lg"} mb={6}>
         Projects{!isPreview && ` ( ${filerteredProjects.length} ) `}
       </Heading>
