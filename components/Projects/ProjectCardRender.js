@@ -8,9 +8,15 @@ import {
   InputRightElement,
   Stack,
   Text,
+  Flex,
+  Link,
+  Button,
 } from "@chakra-ui/react";
-import ProjectCard from "./ProjectCard";
 import { SearchIcon } from "@chakra-ui/icons";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+
+import NextLink from "next/link";
+import ProjectCard from "./ProjectCard";
 
 export default function ProjectCardRender({ data, length, isPreview }) {
   const [searchValue, setSearchValue] = useState("");
@@ -61,6 +67,22 @@ export default function ProjectCardRender({ data, length, isPreview }) {
             return <ProjectCard data={data} key={key} id={key} />;
           })}
       </List>
+      {isPreview && (
+        <Flex justify={"center"} width="100%">
+          <NextLink href="/projects" passHref>
+            <Link _hover="none" mt={8}>
+              <Button
+                rightIcon={<ArrowForwardIcon />}
+                colorScheme="gray"
+                variant="outline"
+                aria-label="view all projects"
+              >
+                View All Projects
+              </Button>
+            </Link>
+          </NextLink>
+        </Flex>
+      )}
     </>
   );
 }

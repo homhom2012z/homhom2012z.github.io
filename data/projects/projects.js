@@ -1,58 +1,65 @@
 export const projects = [
   {
-    title: "Hotel Reservation",
-    github: "https://github.com/markmark345/hotel-reservation",
-    type: "Web App",
-    mainTech: "php",
-    description:
-      "Class project for Database System1 (CS251). Developed a web application for hotel reservation using PHP, CSS, Java Script and MySQL for the final project of the Database course.",
-  },
-  {
-    title: "Queue System",
-    github: "https://github.com/markmark345/Queue-system",
-    type: "Mobile(Android)",
-    mainTech: "android",
-    description:
-      "Queue management system application in Android that was developed in Android studio using Java. My team has Develop and Design the project.",
-  },
-  {
-    title: "Coins Ranking",
-    github: "https://github.com/markmark345/Coins-Ranking",
-    type: "Mobile(Android)",
-    mainTech: "react",
-    description:
-      "Coins Ranking system application in Android This Self-improvement project is about coins ranking top Cryptocurrencies for Android application that was developed in Android studio using Java. My responsibility has Develop and Design the project.",
-  },
-  {
-    title: "Google Scholar",
-    github: "https://github.com/markmark345/Google-Scholar",
-    type: "Web Scraping",
-    mainTech: "python",
-    description:
-      "Class project for Data Analytics Programming (DSI200). This project has To collect information about research activity from Thammasat University and to practice the data collection process including; finding, data scraping, transformation and storing.",
-  },
-  {
-    title: "CI/CD Web ISS Viewer",
-    github: "https://github.com/markmark345/CS-360-issviewer",
-    type: "CI/CD",
+    title: "CI/CD - Pizza Store Web Application",
+    link: "https://github.com/homhom2012z/CS360_STINSE",
     mainTech: "nodejs",
     description:
-      "Class project for Selected Topics in Software Engineering (CS360). This project is about to Continuous Integration and Continuous Deployment Web ISS Viewer on AWS ec2 using Git workflows and docker.",
+      "Class project for Selected topics in Software Engineer (CS360) : This project is to develop an existing project from GitHub and simulate the deployment in a team with an agile process by using Docker and creating a CI/CD pipeline and then deploying it to AWS Service.",
   },
   {
-    title: "Tiny DNS",
-    github: "https://github.com/markmark345/CS-360-issviewer",
-    type: "Socket Programming",
-    mainTech: "cplusplus",
+    title: "CA Timetable & Class Assistant",
+    link: "https://github.com/homhom2012z/CATimetable",
+    mainTech: "android",
     description:
-      "This project Develop a server-side program consisting of Authentication Server, Authorize Server, and Data Server which interface with client-side programs provided by teaching assistants. Where the client contacted Authentication Server, Data Server using TCP Protocol (TCP) Authorize Server and Data Server communicate with each other using UDP Protocol (UDP).",
+      "Class project for Mobile Application Development (CS361) : Android application for student timetable management. My responsibility is as a Software engineer and UI Designer. Designed and developed with Android Studio (Java)",
   },
   {
-    title: "Sex ratio in ASEAN countries, 2011-2018",
-    github: "https://github.com/markmark345/CS245-project",
-    type: "Machine Learning",
+    title: "Hospital Management Systems",
+    link: "https://github.com/homhom2012z/opeope_hospital",
+    mainTech: "php",
+    description:
+      "Class project for Database System1 (CS251) This project is about the management and development of a database system, by creating a Hospital Management website using PHP, HTML, phpMyAdmin, and SQL",
+  },
+  {
+    title: "TU Late Registration System",
+    link: "https://github.com/homhom2012z/cs264_project",
+    mainTech: "nodejs",
+    description:
+      "Class project for Introduction to Software Engineering (CS264) - This project is about simulating software development with the agile process by creating a late registration web application for a computer science department.",
+  },
+  {
+    title: "TU Student - public information viewer",
+    link: "https://github.com/homhom2012z/tustdinfo",
+    mainTech: "html5",
+    description:
+      "A web application for retrieving student information from Thammasat University APIs by using a student identification number. Built a project with HTML, EJS, and Node JS as back-end.",
+  },
+  {
+    title: "Google scholar Web Scraping",
+    link: "https://github.com/homhom2012z/google-scholar-web-scraping",
     mainTech: "python",
     description:
-      "This project Able to bring the data set to display statistical results in various formats such as various types of graphs, etc. Able to use the analyzed data for future reference Test the use of machine learning with real datasets for education.",
+      "A basic python web scraping using python & selenium for Scraping researches data under the affiliation of Thammasat University.",
+  },
+  {
+    title: "Reg-TU Web Scraping",
+    link: "",
+    mainTech: "python",
+    description:
+      "This project is about to scrape all course details by academic year, faculties, and semesters from Thammasat University's registrar's website. And save to a file (Excel format).",
+  },
+  {
+    title: "URL Grabber - Chrome extension",
+    link: "",
+    mainTech: "javascript",
+    description:
+      "An extension for save - store URL/Tab links likes as default bookmarks | integrated with API.",
+  },
+  {
+    title: "Fetch URL title - Node JS Native",
+    link: "",
+    mainTech: "nodejs",
+    description:
+      "An API for fecthing URLs title by URL using Node JS Built-in fetch (v.17.5.0+)",
   },
 ];

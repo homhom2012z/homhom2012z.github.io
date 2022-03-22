@@ -54,13 +54,15 @@ export default function ProjectCard({ data, id }) {
             ml={2}
             mr={4}
           ></Image>
-          <Stack spacing={3}>
+          <Stack spacing={3} width={"100%"}>
             <Stack
               justify={"space-between"}
               direction={{ base: "column", sm: "row" }}
             >
               <Heading size={"sm"}>
-                <LinkOverlay href="/about">{data.title}</LinkOverlay>
+                <LinkOverlay href={data.link} target={"_blank"}>
+                  {data.title}
+                </LinkOverlay>
               </Heading>
               <HStack>
                 <Badge colorScheme={languageColors[data.mainTech]}>
