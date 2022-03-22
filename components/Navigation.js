@@ -30,7 +30,7 @@ export default function Navigation(props) {
     position: sticky;
     z-index: 10;
     top: 0;
-    backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: blur(20px);
     transition: height 0.5s, line-height 0.5s;
   `;
   const navHoverBg = {
@@ -74,7 +74,7 @@ export default function Navigation(props) {
           }}
         >
           <NextLink href="/" passHref>
-            <Heading size="sm" as="a" p={[1, 2, 4]}>
+            <Heading size="sm" as={"button"} p={[1, 2, 4]}>
               PORTFOLIO
             </Heading>
           </NextLink>
@@ -84,7 +84,7 @@ export default function Navigation(props) {
           display={{ base: "none", md: "flex" }}
           direction={{ base: "row", md: "none" }}
         >
-          <LinkNav href="/about">About</LinkNav>
+          {/* <LinkNav href="/about">About</LinkNav> */}
           <LinkNav href="/projects">Projects</LinkNav>
           <LinkNav href="/blog">Blog</LinkNav>
           <LinkNav href="/cv">CV</LinkNav>
@@ -101,9 +101,9 @@ export default function Navigation(props) {
               variant="outline"
             />
             <MenuList>
-              <NextLink href="/" passHref>
+              {/* <NextLink href="/" passHref>
                 <MenuItem>About</MenuItem>
-              </NextLink>
+              </NextLink> */}
               <NextLink href="/projects" passHref>
                 <MenuItem>Projects</MenuItem>
               </NextLink>

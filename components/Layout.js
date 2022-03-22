@@ -25,7 +25,11 @@ const Layout = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Siriwat Bunmee</title>
       </Head>
-      <Container display="flex" maxW="4xl" minH={{ base: "auto", md: "100vh" }}>
+      <Container
+        display="flex"
+        maxW="container.md"
+        minH={{ base: "auto", md: "100vh" }}
+      >
         <GlobalStyle>
           <VStack flex={1} spacing={16} alignItems="stretch" w="full">
             <Flex
@@ -35,7 +39,7 @@ const Layout = ({ children }) => {
               flexDirection="column"
               bg={bgColor[colorMode]}
               color={color[colorMode]}
-              px={[0, 4, 4]}
+              // px={[0, 4, 4]}
               mt={[4, 8, 8]}
             >
               {children}

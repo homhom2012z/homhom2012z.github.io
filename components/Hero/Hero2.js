@@ -14,7 +14,7 @@ import {
   useColorModeValue,
   useColorMode,
 } from "@chakra-ui/react";
-import LogoImage from "./LogoImage";
+import LogoImage from "../LogoImage";
 
 export default function CallToActionWithVideo() {
   const { colorMode } = useColorMode();

@@ -1,12 +1,12 @@
-import Hero from "../components/Hero";
-import HeroIntro from "../components/HeroIntro";
-import Hero2 from "../components/Hero2";
+import HeroIntro from "../components/Hero/HeroIntro";
+import ProjectCardRender from "../components/Projects/ProjectCardRender";
+import { projects } from "../data/projects/projects";
 
 export default function Index() {
   return (
     <>
       <HeroIntro />
-      {/* <Hero2 /> */}
+      <ProjectCardRender data={projects} length={3} isPreview />
     </>
   );
 }

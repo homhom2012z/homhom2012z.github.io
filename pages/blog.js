@@ -39,16 +39,16 @@ export default function Blog({ posts }) {
           justifyContent="center"
           alignItems="flex-start"
           m="0 auto 4rem auto"
-          maxWidth="700px"
+          // maxWidth={"container.md"}
         >
           <Flex
             flexDirection="column"
             justifyContent="flex-start"
             alignItems="flex-start"
-            maxWidth="700px"
+            // maxWidth={"container.md"}
             px={4}
           >
-            <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
+            <Heading letterSpacing="tight" mb={8} as="h1" size="lg">
               Blog ({posts.length} posts)
             </Heading>
             <InputGroup mb={4} mr={4} w="100%">

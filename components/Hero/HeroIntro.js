@@ -8,10 +8,12 @@ import {
   Button,
   Box,
   AspectRatio,
+  HStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import LinkItem from "./LinkItem";
-import LogoImage from "./LogoImage";
+import LinkItem from "../LinkItem";
+import LogoImage from "../LogoImage";
 
 export default function Intro() {
   const { colorMode } = useColorMode();
@@ -31,21 +33,35 @@ export default function Intro() {
       maxWidth="3xl"
       px={2}
     >
-      <Stack spacing={{ base: 4, md: 6 }}>
-        <Heading as="h1" size="lg" md={2}>
-          Hi, I&apos;m Siriwat Bunmee
-        </Heading>
+      <Stack justify={"center"} spacing={{ base: 4, md: 6 }}>
+        <HStack align={"baseline"} justify={{ base: "flex-start" }}>
+          <Heading
+            size={"3xl"}
+            color={useColorModeValue("purple.500", "white")}
+          >
+            Hi
+          </Heading>
+          <Heading
+            as="h1"
+            size="lg"
+            md={2}
+            color={useColorModeValue("black", "purple.500")}
+          >
+            , I&apos;m Siriwat Bunmee
+          </Heading>
+        </HStack>
+
         <Flex
         // flexDirection="column"
         // justifyContent="flex-start"
         // alignItems="flex-start"
         >
           <Text color={colorSecondary[colorMode]}>
-            I&apos;m studying in computer science major, and I have an interest
-            in all things about computers, especially Back-end in Software
-            Development and Software Engineering. Always learning and practicing
-            to develop and improve myself. Feel free to reach out via email or
-            any social media with any inquiries.
+            I studying in computer science major, and I have an interest in all
+            things about computers, especially Back-end in Software Development
+            and Software Engineering. Always learning and practicing to develop
+            and improve myself. Feel free to reach out via email or any social
+            media with any inquiries.
           </Text>
         </Flex>
         <Stack
@@ -82,18 +98,13 @@ export default function Intro() {
             align={"center"}
             width={"full"}
             overflow={"hidden"}
+            transform="scale(1.0)"
+            transition="0.3s ease-in-out"
+            _hover={{
+              transform: "scale(1.2)",
+            }}
           >
             <LogoImage colorMode={colorMode} />
-            {/* <Image
-              alt={"Hero Image"}
-              fit={"cover"}
-              align={"center"}
-              w={"100%"}
-              h={"100%"}
-              src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-              }
-            /> */}
           </Box>
         </AspectRatio>
       </Flex>
