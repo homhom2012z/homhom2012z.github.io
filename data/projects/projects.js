@@ -50,14 +50,14 @@ export const projects = [
   },
   {
     title: "URL Grabber - Chrome extension",
-    link: "",
+    link: "https://github.com/homhom2012z/url-grabber-chrome-extension",
     mainTech: "javascript",
     description:
       "An extension for save - store URL/Tab links likes as default bookmarks | integrated with API.",
   },
   {
     title: "Fetch URL title - Node JS Native",
-    link: "",
+    link: "https://github.com/homhom2012z/fetch-url-title-nodejs-native",
     mainTech: "nodejs",
     description:
       "An API for fecthing URLs title by URL using Node JS Built-in fetch (v.17.5.0+)",
