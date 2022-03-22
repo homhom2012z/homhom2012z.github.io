@@ -8,6 +8,8 @@ const ThemeToggle = () => {
     light: "black",
     dark: "white",
   };
+  const colorHv = useColorModeValue("gray.100", "gray.700");
+
   return (
     <IconButton
       aria-label="Toggle theme"
@@ -15,7 +17,7 @@ const ThemeToggle = () => {
       onClick={toggleColorMode}
       color={iconColor[colorMode]}
       _hover={{
-        background: `${useColorModeValue("gray.300", "gray.700")}`,
+        background: `${colorHv}`,
       }}
     />
   );
