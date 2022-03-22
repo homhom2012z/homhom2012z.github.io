@@ -3,7 +3,7 @@ let moment = require("moment");
 ghpages.publish(
   "out",
   {
-    branch: "gh-pages",
+    branch: "master",
     dotfiles: true,
     message: `Deploy: [${moment().format("DD/MM/YY")}]`,
   },
