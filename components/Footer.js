@@ -46,7 +46,7 @@ export default function Footer() {
             />
             <IconButton
               as="a"
-              href="#"
+              // href=""
               aria-label="Twitter"
               icon={<FaTwitter fontSize="1.25rem" />}
               target="_blank"
