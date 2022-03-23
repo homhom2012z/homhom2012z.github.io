@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     title: "Reg-TU Web Scraping",
-    link: "",
+    link: "https://github.com/homhom2012z/reg-tu-web-scraping",
     mainTech: "python",
     description:
       "This project is about to scrape all course details by academic year, faculties, and semesters from Thammasat University's registrar's website. And save to a file (Excel format).",
