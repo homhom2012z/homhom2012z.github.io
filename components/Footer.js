@@ -46,7 +46,7 @@ export default function Footer() {
             />
             <IconButton
               as="a"
-              href="https://twitter.com/"
+              href="#"
               aria-label="Twitter"
               icon={<FaTwitter fontSize="1.25rem" />}
               target="_blank"
@@ -54,7 +54,7 @@ export default function Footer() {
             <IconButton
               as="a"
               type="email"
-              href="mailto:siriwat.bunmee.9@gmail.com"
+              href="mailto:siriwat.bun.forwork@gmail.com"
               aria-label="Email"
               icon={<GrMail fontSize="1.25rem" />}
               target="_blank"
