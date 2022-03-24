@@ -60,6 +60,6 @@ export const projects = [
     link: "https://github.com/homhom2012z/fetch-url-title-nodejs-native",
     mainTech: "nodejs",
     description:
-      "An API for fecthing URLs title by URL using Node JS Built-in fetch (v.17.5.0+)",
+      "An API for fetching URLs title by URL using Node JS Built-in fetch (v.17.5.0+)",
   },
 ];
