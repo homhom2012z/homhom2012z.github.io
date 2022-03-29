@@ -62,4 +62,17 @@ export const projects = [
     description:
       "An API for fetching URLs title by URL using Node JS Built-in fetch (v.17.5.0+)",
   },
+  {
+    title: "homhom2012z.github.io",
+    link: "https://github.com/homhom2012z/homhom2012z.github.io",
+    mainTech: "nextjs",
+    description: "My Personal Portfolio website. built with Next.js",
+  },
+  {
+    title: "Dog every 5 seconds",
+    link: "https://github.com/homhom2012z/dog-every-5-seconds",
+    mainTech: "nextjs",
+    description:
+      "Display random dogs image every 5 seconds. using API from https://dog.ceo/dog-api/",
+  },
 ];
