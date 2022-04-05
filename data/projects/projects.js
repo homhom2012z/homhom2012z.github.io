@@ -75,4 +75,17 @@ export const projects = [
     description:
       "Display random dogs image every 5 seconds. using API from https://dog.ceo/dog-api/",
   },
+  {
+    title: "Simple-Native-DB",
+    link: "https://github.com/homhom2012z/simple-native-db",
+    mainTech: "nodejs",
+    description: "Simple JSON native database system",
+  },
+  {
+    title: "Simple-Native-DB-Client",
+    link: "https://github.com/homhom2012z/simple-native-db-client",
+    mainTech: "nextjs",
+    description:
+      "Frontend client for simple-native-db. Built with Next.js & Chakra-UI",
+  },
 ];
