@@ -14,6 +14,7 @@ import {
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import LinkItem from "../LinkItem";
 import LogoImage from "../LogoImage";
+import { motion } from "framer-motion";
 
 export default function Intro() {
   const { colorMode } = useColorMode();
@@ -90,22 +91,31 @@ export default function Intro() {
         w={"full"}
       >
         <AspectRatio flexShrink={0} ratio={1} w={56} h={56} as="figure">
-          <Box
-            position={"relative"}
-            // height={"300px"}
-            // rounded={"2xl"}
-            // boxShadow={"2xl"}
-            align={"center"}
-            width={"full"}
-            overflow={"hidden"}
-            transform="scale(1.0)"
-            transition="0.3s ease-in-out"
-            _hover={{
-              transform: "scale(1.2)",
+          <motion.div
+            animate={{ y: 20, scale: 0.97 }}
+            transition={{
+              repeat: Infinity,
+              duration: 2,
+              repeatType: "reverse",
             }}
           >
-            <LogoImage colorMode={colorMode} />
-          </Box>
+            <Box
+              position={"relative"}
+              // height={"300px"}
+              // rounded={"2xl"}
+              // boxShadow={"2xl"}
+              align={"center"}
+              width={"full"}
+              overflow={"hidden"}
+              transform="scale(1.0)"
+              transition="0.3s ease-in-out"
+              _hover={{
+                transform: "scale(1.2)",
+              }}
+            >
+              <LogoImage colorMode={colorMode} />
+            </Box>
+          </motion.div>
         </AspectRatio>
       </Flex>
     </Stack>
