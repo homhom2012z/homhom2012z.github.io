@@ -9,11 +9,6 @@ import GlobalStyle from "../components/GlobalStyle";
 const Layout = ({ children }) => {
   const { colorMode } = useColorMode();
 
-  const bgColor = {
-    light: "white",
-    dark: "#171717",
-  };
-
   const color = {
     light: "black",
     dark: "white",
@@ -38,7 +33,6 @@ const Layout = ({ children }) => {
               as="main"
               justifyContent="top"
               flexDirection="column"
-              bg={bgColor[colorMode]}
               color={color[colorMode]}
               // px={[0, 4, 4]}
               mt={[4, 8, 8]}
