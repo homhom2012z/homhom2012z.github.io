@@ -66,7 +66,8 @@ export const projects = [
     title: "homhom2012z.github.io",
     link: "https://github.com/homhom2012z/homhom2012z.github.io",
     mainTech: "nextjs",
-    description: "My Personal Portfolio website. built with Next.js",
+    description:
+      "My Personal Portfolio website. built with Next.js & Chakra-UI",
   },
   {
     title: "Dog every 5 seconds",

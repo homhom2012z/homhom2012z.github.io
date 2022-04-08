@@ -17,7 +17,7 @@ const breakpoints = createBreakpoints({
 
 const config = {
   initialColorMode: "white",
-  useSystemColorMode: true,
+  useSystemColorMode: false,
 };
 
 const overrides = {
