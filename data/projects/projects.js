@@ -71,7 +71,7 @@ export const projects = [
   },
   {
     title: "Dog every 5 seconds",
-    link: "https://github.com/homhom2012z/dog-every-5-seconds",
+    link: "https://dog-every-5-seconds.vercel.app/",
     mainTech: "nextjs",
     description:
       "Display random dogs image every 5 seconds. using API from https://dog.ceo/dog-api/",
@@ -84,7 +84,7 @@ export const projects = [
   },
   {
     title: "Simple-Native-DB-Client",
-    link: "https://github.com/homhom2012z/simple-native-db-client",
+    link: "https://simple-native-db-client.vercel.app/",
     mainTech: "nextjs",
     description:
       "Frontend client for simple-native-db. Built with Next.js & Chakra-UI",
