@@ -32,13 +32,21 @@ export default function ProjectCardRender({ data, length, isPreview }) {
     <>
       {isPreview && <Divider mb={12} mt={2} w="90%" alignSelf="center" />}
       <Heading as={"h1"} size={"lg"} mb={6}>
-        Projects{!isPreview && ` ( ${filerteredProjects.length} ) `}
+        Projects{!isPreview && ` (${filerteredProjects.length} project) `}
       </Heading>
       {!isPreview ? (
         <>
           <Text mb={4}>
-            Below is the list of Open Source Projects I&apos;ve worked on in
-            learning methods and university term projects.
+            Below is the list of{" "}
+            <Link
+              href="https://github.com/homhom2012z"
+              textDecorationLine={"underline"}
+              isExternal
+            >
+              Open Source
+            </Link>{" "}
+            Projects I&apos;ve worked on in learning methods and university term
+            projects.
           </Text>
           <InputGroup mb={4} mr={4} w="100%">
             <Input
