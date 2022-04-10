@@ -28,6 +28,12 @@ export const projects = [
       "Class project for Introduction to Software Engineering (CS264) - This project is about simulating software development with the agile process by creating a late registration web application for a computer science department.",
   },
   {
+    title: "Tiny Socket Programming",
+    link: "https://github.com/homhom2012z/socket-programming",
+    mainTech: "java",
+    description: "A tiny Socket Programming (TCP-UDP) writing in Java",
+  },
+  {
     title: "TU Student - public information viewer",
     link: "https://github.com/homhom2012z/tustdinfo",
     mainTech: "html5",
@@ -88,5 +94,12 @@ export const projects = [
     mainTech: "nextjs",
     description:
       "Frontend client for simple-native-db. Built with Next.js & Chakra-UI",
+  },
+  {
+    title: "Nodejs-Auth-Sessions",
+    link: "https://github.com/homhom2012z/nodejs-express-sessions",
+    mainTech: "nodejs",
+    description:
+      "Sample of Node.js session management using Express.js and Express-sessions.",
   },
 ];
