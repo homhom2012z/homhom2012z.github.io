@@ -12,15 +12,19 @@ import {
   Link,
   Button,
   useColorModeValue,
+  Box,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 import NextLink from "next/link";
 import ProjectCard from "./ProjectCard";
+import ProjectCardJSON from "./ProjectCardJSON";
 
 export default function ProjectCardRender({ data, length, isPreview }) {
   const [searchValue, setSearchValue] = useState("");
+  const [viewSwitch, setViewSwitch] = useState(false);
+
   const filerteredProjects = data
     .sort((a, b) => a.key - b.key)
     .filter((project) =>
@@ -31,9 +35,26 @@ export default function ProjectCardRender({ data, length, isPreview }) {
   return (
     <>
       {isPreview && <Divider mb={12} mt={2} w="90%" alignSelf="center" />}
-      <Heading as={"h1"} size={"lg"} mb={6}>
-        Projects{!isPreview && ` (${filerteredProjects.length} project) `}
-      </Heading>
+
+      <Flex as="header" width="full" align="center">
+        <Heading as={"h1"} size={"lg"} mb={6}>
+          Projects{!isPreview && ` (${filerteredProjects.length} project) `}
+        </Heading>
+        {!isPreview && (
+          <Box marginLeft="auto" mb={6} opacity={"0.7"}>
+            <Stack direction={{ base: "row" }} spacing={2}>
+              <Button
+                colorScheme={viewSwitch ? "purple" : "orange"}
+                size={"sm"}
+                onClick={() => setViewSwitch(!viewSwitch ? true : false)}
+              >
+                {!viewSwitch ? "JSON View" : "Card View"}
+              </Button>
+            </Stack>
+          </Box>
+        )}
+      </Flex>
+
       {!isPreview ? (
         <>
           <Text mb={4}>
@@ -73,7 +94,11 @@ export default function ProjectCardRender({ data, length, isPreview }) {
         {filerteredProjects
           .slice(0, `${length ? length : data.length}`)
           .map((data, key) => {
-            return <ProjectCard data={data} key={key} id={key} />;
+            return !viewSwitch ? (
+              <ProjectCard data={data} key={key} id={key} />
+            ) : (
+              <ProjectCardJSON data={data} key={key} id={key} />
+            );
           })}
       </List>
       {isPreview && (
