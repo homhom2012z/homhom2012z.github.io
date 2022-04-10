@@ -48,7 +48,7 @@ export default function ProjectCard({ data, id }) {
         //   alignContent={"center"}
         >
           <Image
-            src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${data.mainTech}/${data.mainTech}-original.svg`}
+            src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${data.stacks[0]}/${data.stacks[0]}-original.svg`}
             alt="img"
             width={["40px", "50px", "60px"]}
             ml={2}
@@ -65,9 +65,14 @@ export default function ProjectCard({ data, id }) {
                 </LinkOverlay>
               </Heading>
               <HStack>
-                <Badge colorScheme={languageColors[data.mainTech]}>
-                  {data.mainTech}
-                </Badge>
+                {data.stacks
+                  .slice(0)
+                  .reverse()
+                  .map((stack) => (
+                    <Badge key={stack} colorScheme={languageColors[stack]}>
+                      {stack}
+                    </Badge>
+                  ))}
                 <Icon as={FiExternalLink} opacity={opacity} />
               </HStack>
             </Stack>
