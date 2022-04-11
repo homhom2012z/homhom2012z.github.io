@@ -4,15 +4,13 @@ import {
   Text,
   Flex,
   Stack,
-  VStack,
-  Button,
   Box,
   AspectRatio,
   HStack,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import LinkItem from "../LinkItem";
+import LinkItem from "../Link/LinkItem";
 import LogoImage from "../LogoImage";
 import { motion } from "framer-motion";
 

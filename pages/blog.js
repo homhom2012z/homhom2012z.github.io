@@ -9,11 +9,10 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 
-import Container from "../components/Container";
-import { getAllFilesFrontMatter } from "../lib/mdx";
-import BlogPost from "../components/BlogPost";
-
+import { getAllFilesFrontMatter } from "../lib/mdx/mdx";
 import { SearchIcon } from "@chakra-ui/icons";
+import Container from "../components/Container";
+import BlogPost from "../components/Blog";
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState("");

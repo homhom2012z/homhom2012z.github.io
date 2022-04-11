@@ -1,6 +1,6 @@
 import { useColorMode } from "@chakra-ui/react";
 import { Global, css } from "@emotion/react";
-import { prismLightTheme, prismDarkTheme } from "../styles/prism";
+import { prismLightTheme, prismDarkTheme } from "../prism";
 
 export default function GlobalStyle({ children }) {
   const { colorMode } = useColorMode();

@@ -1,14 +1,11 @@
 import React from "react";
-import NextLink from "next/link";
 import {
   Stack,
   Text,
   ButtonGroup,
   IconButton,
   Divider,
-  VStack,
   HStack,
-  Link,
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";

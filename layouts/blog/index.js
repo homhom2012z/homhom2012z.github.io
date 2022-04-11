@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
-import Container from "../components/Container";
+import Container from "../../components/Container";
 
 export default function BlogLayout({ children, frontMatter }) {
   const { colorMode } = useColorMode();

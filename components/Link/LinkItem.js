@@ -1,12 +1,5 @@
 import NextLink from "next/link";
-import {
-  useColorMode,
-  Button,
-  Flex,
-  Box,
-  Heading,
-  Icon,
-} from "@chakra-ui/react";
+import { useColorMode, Button, Icon } from "@chakra-ui/react";
 
 export default function LinkItem({ href, children, rightIcon }) {
   const { colorMode } = useColorMode();

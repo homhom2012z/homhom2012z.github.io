@@ -2,7 +2,6 @@ import Head from "next/head";
 import HeroIntro from "../components/Hero/HeroIntro";
 import ProjectCardRender from "../components/Projects/ProjectCardRender";
 import { projects } from "../data/projects/projects";
-import { motion } from "framer-motion";
 export default function Index() {
   return (
     <>

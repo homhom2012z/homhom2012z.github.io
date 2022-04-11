@@ -2,9 +2,9 @@ import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 import customTheme from "../styles/theme";
-import Navigation from "../components/Navigation";
-import Layout from "../components/Layout";
-import HandleScroll from "../components/HandleScroll";
+import Navigation from "../layouts/navigation";
+import Layout from "../layouts/layout";
+import HandleScroll from "../layouts/handlescroll";
 
 function MyApp({ Component, pageProps, router }) {
   return (

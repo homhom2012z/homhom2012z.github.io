@@ -1,7 +1,6 @@
 import React from "react";
 import {
   useColorMode,
-  Button,
   Flex,
   Box,
   Heading,
@@ -10,7 +9,6 @@ import {
   MenuList,
   MenuItem,
   IconButton,
-  Stack,
   HStack,
 } from "@chakra-ui/react";
 
@@ -20,7 +18,7 @@ import NextLink from "next/link";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
-import ThemeToggle from "../components/ThemeToggle";
+import ThemeToggle from "./ThemeToggle";
 import LinkNav from "./LinkNav";
 
 export default function Navigation(props) {

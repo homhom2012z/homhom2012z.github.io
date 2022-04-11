@@ -13,7 +13,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FiExternalLink } from "react-icons/fi";
-import { languageColors } from "../../lib/language-colors-schema";
+import { languageColors } from "../../lib/language-colors/language-colors-schema";
 
 export default function ProjectCard({ data, id }) {
   const { colorMode } = useColorMode();

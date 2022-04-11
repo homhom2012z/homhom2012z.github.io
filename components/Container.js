@@ -1,12 +1,7 @@
 import React from "react";
-import { useColorMode, Button, Flex, Box, Heading } from "@chakra-ui/react";
-import { ColorModeProvider } from "@chakra-ui/react";
+import { useColorMode, Flex } from "@chakra-ui/react";
 
-import NextLink from "next/link";
-import styled from "@emotion/styled";
-import ThemeToggle from "../components/ThemeToggle";
-import Navigation from "../components/Navigation";
-import GlobalStyle from "../components/GlobalStyle";
+import GlobalStyle from "../styles/global";
 
 const Container = ({ children }) => {
   const { colorMode } = useColorMode();

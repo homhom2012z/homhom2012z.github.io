@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Head from "next/head";
 
 import ProjectCardRender from "../components/Projects/ProjectCardRender";

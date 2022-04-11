@@ -2,9 +2,9 @@ import React from "react";
 import Head from "next/head";
 
 import { useColorMode, Flex, VStack, Container } from "@chakra-ui/react";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 
-import GlobalStyle from "../components/GlobalStyle";
+import GlobalStyle from "../../styles/global";
 
 const Layout = ({ children }) => {
   const { colorMode } = useColorMode();
