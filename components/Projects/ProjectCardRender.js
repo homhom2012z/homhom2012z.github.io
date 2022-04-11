@@ -31,7 +31,8 @@ export default function ProjectCardRender({ data, length, isPreview }) {
       project.title.toLowerCase().includes(searchValue.toLowerCase())
     );
 
-  const colorHv = useColorModeValue("gray.100", "gray.700");
+  const colorHv = useColorModeValue("purple.100", "purple.700");
+
   return (
     <>
       {isPreview && <Divider mb={12} mt={2} w="90%" alignSelf="center" />}

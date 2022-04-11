@@ -10,9 +10,10 @@ import {
 
 export default function LinkItem({ href, children, rightIcon }) {
   const { colorMode } = useColorMode();
+
   const navHoverBg = {
-    light: "gray.100",
-    dark: "gray.700",
+    light: "purple.100",
+    dark: "purple.700",
   };
   const navHoverFont = {
     light: "white",

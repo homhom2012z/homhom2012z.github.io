@@ -35,7 +35,7 @@ export default function ProjectCard({ data, id }) {
         transitionDuration="slower"
         transition-timing-function="easing-ease-out"
         _hover={{
-          transform: "translateY(-4px)",
+          transform: "translate(-4px,-4px)",
           shadow: "lg",
         }}
         onMouseOver={() => setOpacity(1)}

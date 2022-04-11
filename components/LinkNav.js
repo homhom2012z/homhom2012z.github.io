@@ -3,10 +3,12 @@ import { useColorMode, Button, Flex, Box, Heading } from "@chakra-ui/react";
 
 export default function LinkNav({ href, children }) {
   const { colorMode } = useColorMode();
+
   const navHoverBg = {
-    light: "gray.100",
-    dark: "gray.700",
+    light: "purple.100",
+    dark: "purple.700",
   };
+
   const navHoverFont = {
     light: "white",
     dark: "black",
