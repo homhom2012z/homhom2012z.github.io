@@ -7,6 +7,8 @@ import {
   Input,
   InputGroup,
   InputRightElement,
+  Text,
+  Box,
 } from "@chakra-ui/react";
 
 import { getAllFilesFrontMatter } from "../lib/mdx/mdx";
@@ -37,33 +39,42 @@ export default function Blog({ posts }) {
           spacing={8}
           justifyContent="center"
           alignItems="flex-start"
+          w={"100%"}
           m="0 auto 4rem auto"
-          // maxWidth={"container.md"}
         >
           <Flex
             flexDirection="column"
             justifyContent="flex-start"
             alignItems="flex-start"
-            // maxWidth={"container.md"}
+            w={"100%"}
             px={4}
           >
-            <Heading letterSpacing="tight" mb={8} as="h1" size="lg">
-              Blog ({posts.length} posts)
-            </Heading>
-            <InputGroup mb={4} mr={4} w="100%">
-              <Input
-                aria-label="Search by title"
-                placeholder="Search by title"
-                onChange={(e) => setSearchValue(e.target.value)}
-              />
-              <InputRightElement>
-                <SearchIcon color="gray.300" />
-              </InputRightElement>
-            </InputGroup>
-            {!filteredBlogPosts.length && "No posts found :("}
-            {filteredBlogPosts.map((frontMatter) => (
-              <BlogPost key={frontMatter.title} {...frontMatter} />
-            ))}
+            <Box w={"100%"} mb={8}>
+              <Heading letterSpacing="tight" mb={8} as="h1" size="lg">
+                Blog ({posts.length} posts)
+              </Heading>
+              <InputGroup w="100%">
+                <Input
+                  aria-label="Search by title"
+                  placeholder="Search by title"
+                  onChange={(e) => setSearchValue(e.target.value)}
+                />
+                <InputRightElement>
+                  <SearchIcon color="purple.300" />
+                </InputRightElement>
+              </InputGroup>
+            </Box>
+
+            {!filteredBlogPosts.length && (
+              <Box w={"100%"} textAlign={"center"} mt={"20vh"} mb={20}>
+                <Text>No posts matched your search.</Text>
+              </Box>
+            )}
+            <Stack spacing={10}>
+              {filteredBlogPosts.map((frontMatter) => (
+                <BlogPost key={frontMatter.title} {...frontMatter} />
+              ))}
+            </Stack>
           </Flex>
         </Stack>
       </Container>

@@ -13,12 +13,13 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
   return (
     <NextLink href={`blog/${slug}`} passHref>
       <Link w="100%" _hover={{ textDecoration: "none" }}>
-        <Box mb={10} display="block" width="100%">
+        <Box display="block" width="100%">
           <Flex
             width="100%"
             align="flex-start"
             justifyContent="space-between"
             flexDirection={["column", "row"]}
+            mb={1}
           >
             <Flex
               flexDirection="column"
@@ -36,6 +37,7 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
               minWidth="140px"
               textAlign={["left", "right"]}
               mb={[4, 0]}
+              fontSize={"sm"}
             >
               {format(parseISO(publishedAt), "MMMM dd, yyyy")}
             </Text>
