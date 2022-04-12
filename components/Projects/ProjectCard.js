@@ -11,6 +11,9 @@ import {
   useColorMode,
   Icon,
   useColorModeValue,
+  Link,
+  Divider,
+  Box,
 } from "@chakra-ui/react";
 import { FiExternalLink } from "react-icons/fi";
 import { languageColors } from "../../lib/language-colors/language-colors-schema";
@@ -54,31 +57,71 @@ export default function ProjectCard({ data, id }) {
             ml={2}
             mr={4}
           ></Image>
-          <Stack spacing={3} width={"100%"}>
-            <Stack
-              justify={"space-between"}
-              direction={{ base: "column", sm: "row" }}
-            >
-              <Heading size={"sm"}>
-                <LinkOverlay href={data.link} target={"_blank"}>
-                  {data.title}
-                </LinkOverlay>
-              </Heading>
-              <HStack>
-                {data.stacks
-                  .slice(0)
-                  .reverse()
-                  .map((stack) => (
-                    <Badge key={stack} colorScheme={languageColors[stack]}>
-                      {stack}
-                    </Badge>
-                  ))}
-                <Icon as={FiExternalLink} opacity={opacity} />
-              </HStack>
+          <Stack width={"100%"}>
+            <Stack spacing={3}>
+              <Stack
+                justify={"space-between"}
+                direction={{ base: "column", sm: "row" }}
+                mt={2}
+              >
+                <Heading size={"sm"} cursor={"pointer"}>
+                  {/* <LinkOverlay href={data.link} target={"_blank"}>
+                    {data.title}
+                  </LinkOverlay> */}
+                  <Text>{data.title}</Text>
+                </Heading>
+                <HStack>
+                  {data.stacks
+                    .slice(0)
+                    .reverse()
+                    .map((stack) => (
+                      <Badge key={stack} colorScheme={languageColors[stack]}>
+                        {stack}
+                      </Badge>
+                    ))}
+                  <Icon as={FiExternalLink} opacity={opacity} />
+                </HStack>
+              </Stack>
+              <Box>
+                <Text fontSize={"sm"} color={color[colorMode]}>
+                  {data.description}
+                </Text>
+              </Box>
             </Stack>
-            <Text fontSize={"sm"} color={color[colorMode]}>
-              {data.description}
-            </Text>
+
+            <Divider />
+            <HStack spacing={2}>
+              <Link
+                href={data.source}
+                fontSize={"sm"}
+                color={color[colorMode]}
+                opacity={0.7}
+                _hover={{
+                  opacity: "1",
+                  textDecorationLine: "underline",
+                }}
+                // textDecorationLine={"underline"}
+                isExternal
+              >
+                source
+              </Link>
+              {data.demo && (
+                <Link
+                  href={data.demo}
+                  fontSize={"sm"}
+                  color={color[colorMode]}
+                  opacity={0.7}
+                  _hover={{
+                    opacity: "1",
+                    textDecorationLine: "underline",
+                  }}
+                  // textDecorationLine={"underline"}
+                  isExternal
+                >
+                  demo
+                </Link>
+              )}
+            </HStack>
           </Stack>
         </HStack>
       </LinkBox>
