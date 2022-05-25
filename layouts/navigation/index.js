@@ -85,7 +85,8 @@ export default function Navigation(props) {
           {/* <LinkNav href="/about">About</LinkNav> */}
           <LinkNav href="/projects">Projects</LinkNav>
           <LinkNav href="/blog">Blog</LinkNav>
-          <LinkNav href="/files/pdf/CV.pdf">CV</LinkNav>
+          {/* <LinkNav href="/files/pdf/CV.pdf">CV</LinkNav> */}
+          <LinkNav href="#">CV</LinkNav>
         </Box>
       </HStack>
       <Box flex={1} align="right">
