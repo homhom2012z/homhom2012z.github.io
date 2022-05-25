@@ -109,7 +109,10 @@ export default function Navigation(props) {
               <NextLink href="/blog" passHref>
                 <MenuItem>Blog</MenuItem>
               </NextLink>
-              <NextLink href="/files/pdf/CV.pdf" passHref>
+              {/* <NextLink href="/files/pdf/CV.pdf" passHref>
+                <MenuItem>CV</MenuItem>
+              </NextLink> */}
+              <NextLink href="#" passHref>
                 <MenuItem>CV</MenuItem>
               </NextLink>
             </MenuList>
