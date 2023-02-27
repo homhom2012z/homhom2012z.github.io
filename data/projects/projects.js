@@ -99,7 +99,8 @@ export const projects = [
     source: "https://github.com/homhom2012z/simple-native-db",
     demo: "https://simple-native-db.herokuapp.com/",
     stacks: ["nodejs", "expressjs", "JSON"],
-    description: "Simple JSON native database system",
+    description:
+      "JSON Native database backend system for simple CRUD operations. Built with Node.js and Express.js",
   },
   {
     title: "Simple-Native-DB-Client",
@@ -110,7 +111,7 @@ export const projects = [
       "Frontend client for simple-native-db. Built with Next.js & Chakra-UI",
   },
   {
-    title: "Nodejs-Auth-Sessions",
+    title: "Express Auth Sessions",
     source: "https://github.com/homhom2012z/nodejs-express-sessions",
     demo: "",
     stacks: ["nodejs", "expressjs", "sessions"],

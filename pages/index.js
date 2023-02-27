@@ -2,6 +2,7 @@ import Head from "next/head";
 import HeroIntro from "../components/Hero/HeroIntro";
 import ProjectCardRender from "../components/Projects/ProjectCardRender";
 import { projects } from "../data/projects/projects";
+import ExperienceIntro from "../components/Experiences/ExperienceIntro";
 export default function Index() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Index() {
       </Head>
 
       <HeroIntro />
+      <ExperienceIntro />
       <ProjectCardRender data={projects} length={3} isPreview />
     </>
   );

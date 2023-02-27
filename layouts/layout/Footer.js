@@ -36,7 +36,7 @@ export default function Footer() {
           <ButtonGroup variant="ghost">
             <IconButton
               as="a"
-              href="https://www.instagram.com/_victor.ix/"
+              href="#"
               aria-label="Instagram"
               icon={<FaInstagram fontSize="1.25rem" />}
               target="_blank"

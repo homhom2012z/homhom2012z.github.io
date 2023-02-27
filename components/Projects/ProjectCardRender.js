@@ -35,7 +35,7 @@ export default function ProjectCardRender({ data, length, isPreview }) {
 
   return (
     <>
-      {isPreview && <Divider mb={12} mt={2} w="90%" alignSelf="center" />}
+      {isPreview && <Divider mb={8} mt={8} w="90%" alignSelf="center" />}
 
       <Flex as="header" width="full" align="center">
         <Heading as={"h1"} size={"lg"} mb={6}>

@@ -85,6 +85,7 @@ export default function Navigation(props) {
           {/* <LinkNav href="/about">About</LinkNav> */}
           <LinkNav href="/projects">Projects</LinkNav>
           <LinkNav href="/blog">Blog</LinkNav>
+          {/* <LinkNav href="/experience">Experience</LinkNav> */}
           {/* <LinkNav href="/files/pdf/CV.pdf">CV</LinkNav> */}
           <LinkNav href="#">CV</LinkNav>
         </Box>
@@ -109,6 +110,9 @@ export default function Navigation(props) {
               <NextLink href="/blog" passHref>
                 <MenuItem>Blog</MenuItem>
               </NextLink>
+              {/* <NextLink href="/experience" passHref>
+                <MenuItem>Experience</MenuItem>
+              </NextLink> */}
               {/* <NextLink href="/files/pdf/CV.pdf" passHref>
                 <MenuItem>CV</MenuItem>
               </NextLink> */}

@@ -56,11 +56,10 @@ export default function CallToActionWithVideo() {
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            I&apos;m studying in computer science major, and I have an interest
-            in all things about computers, especially Back-end in Software
-            Development and Software Engineering. Always learning and practicing
-            to develop and improve myself. Feel free to reach out via email or
-            any social media with any inquiries.
+            I&apos;m graduated in computer science major, and I have an interest
+            in Full-Stack software development. Always enjoys coding and
+            learning to develop/improve myself. Feel free to reach out via email
+            or any social media with any inquiries.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}

@@ -56,10 +56,10 @@ export default function Intro() {
         // alignItems="flex-start"
         >
           <Text color={colorSecondary[colorMode]}>
-            I studying in computer science major, and I have an interest in
-            Back-end in Software Development and Software Engineering. Always
-            learning and practicing to develop and improve myself. Feel free to
-            reach out via email or any social media with any inquiries.
+            I graduated in computer science major, and I have an interest in
+            Full-Stack software development. Always enjoys coding and learning
+            to develop/improve myself. Feel free to reach out via email or any
+            social media with any inquiries.
           </Text>
         </Flex>
         <Stack
