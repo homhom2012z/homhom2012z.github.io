@@ -1,5 +1,5 @@
 {
-  "name": "victorsiriwat.me",
+  "name": "victorsiriwat",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "export": "npm run build && next export && type nul > out/.nojekyll",
     "serve": "npm run export && serve out",
     "cname": "type CNAME > out/CNAME",
-    "deploy": "npm run export && npm run cname && node gh-pages.js"
+    "deploy": "npm run export && node gh-pages.js"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
